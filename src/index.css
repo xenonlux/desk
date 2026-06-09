@@ -1,0 +1,77 @@
+@import "./fonts.css";
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Natural Tones & Sage Palette Overrides */
+  --color-slate-50: #fafaf5;
+  --color-slate-100: #f5f4eb;
+  --color-slate-200: #ebdcc9;
+  --color-slate-300: #decbaf;
+  --color-slate-400: #a8947b;
+  --color-slate-500: #7b6a55;
+  --color-slate-600: #55493b;
+  --color-slate-700: #3e3328;
+  --color-slate-800: #2c241c;
+  --color-slate-900: #1f1a14;
+  --color-slate-950: #14110d;
+
+  --color-indigo-50: #f4f6f0;
+  --color-indigo-100: #e6ebdb;
+  --color-indigo-200: #ced9be;
+  --color-indigo-300: #abc192;
+  --color-indigo-400: #88a36c;
+  --color-indigo-500: #6e8260;
+  --color-indigo-600: #5f6f52;
+  --color-indigo-700: #42551d;
+  --color-indigo-800: #344214;
+  --color-indigo-900: #1b230a;
+
+  --color-blue-50: #f2f7f7;
+  --color-blue-100: #e4eded;
+  --color-blue-200: #c9dbdc;
+  --color-blue-300: #9fc1c2;
+  --color-blue-400: #93abac;
+  --color-blue-500: #6a8280;
+  --color-blue-600: #4a5c5b;
+  --color-blue-700: #354342;
+  --color-blue-800: #222c2b;
+  --color-blue-900: #141c1b;
+
+  --color-emerald-50: #f5f8f5;
+  --color-emerald-100: #e7efe7;
+  --color-emerald-200: #cedfce;
+  --color-emerald-300: #a9caa9;
+  --color-emerald-400: #8ba888;
+  --color-emerald-500: #588157;
+  --color-emerald-600: #3a5a40;
+  --color-emerald-700: #2c4230;
+  --color-emerald-800: #1e2c21;
+  --color-emerald-950: #101c13;
+
+  --color-rose-50: #fdf5f2;
+  --color-rose-100: #faeae3;
+  --color-rose-200: #f2d1c6;
+  --color-rose-300: #e6b0a2;
+  --color-rose-400: #d48b78;
+  --color-rose-500: #bf6f4c;
+  --color-rose-600: #a35638;
+  --color-rose-700: #7b3e26;
+  --color-rose-800: #512817;
+  --color-rose-900: #2d160e;
+
+  --color-amber-50: #fef9f2;
+  --color-amber-100: #fbf0e1;
+  --color-amber-200: #f5ddbd;
+  --color-amber-300: #ebc493;
+  --color-amber-400: #faedcd;
+  --color-amber-500: #d4a373;
+  --color-amber-600: #b88655;
+  --color-amber-700: #8f653d;
+  --color-amber-800: #624427;
+  --color-amber-950: #2d2110;
+}
+

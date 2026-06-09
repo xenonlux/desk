@@ -1,0 +1,62 @@
+{
+  "build": {
+    "beforeBuildCommand": "npm run build",
+    "beforeDevCommand": "npm run dev",
+    "distDir": "../dist",
+    "devPath": "http://localhost:3000"
+  },
+  "package": {
+    "productName": "MaqarrDesk",
+    "version": "1.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true
+    },
+    "bundle": {
+      "active": true,
+      "category": "DeveloperTool",
+      "copyright": "Workspace Pro Corporation",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/icon.ico"
+      ],
+      "identifier": "com.workspacepro.offlineapp",
+      "longDescription": "A fully offline workspace and reservation utility with high-end device lock security activation algorithms.",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerBundleIdentifier": null,
+        "signingIdentity": null,
+        "usePlayground": false
+      },
+      "resources": [],
+      "shortDescription": "Offline high-security booking tool",
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": null,
+        "timestampUrl": null,
+        "useMsi": false
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 720,
+        "resizable": true,
+        "title": "مقر ديسك - إدارة وحجز المساحات والمرافق الأمنية المستقلة",
+        "width": 1280
+      }
+    ]
+  }
+}
