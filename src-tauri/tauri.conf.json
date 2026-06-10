@@ -1,61 +1,58 @@
 {
   "build": {
-    "beforeBuildCommand": "npm run build",
     "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:3000",
     "distDir": "../dist",
-    "devPath": "http://localhost:3000"
+    "withGlobalTauri": false
   },
   "package": {
-    "productName": "MaqarrDesk",
-    "version": "1.0.0"
+    "productName": "deskbook",
+    "version": "0.1.0"
   },
   "tauri": {
     "allowlist": {
-      "all": true
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      }
     },
     "bundle": {
       "active": true,
-      "category": "DeveloperTool",
-      "copyright": "Workspace Pro Corporation",
-      "deb": {
-        "depends": []
-      },
-      "externalBin": [],
+      "targets": ["msi", "nsis"],
+      "identifier": "com.deskbook.app",
+      "longDescription": "مقر ديسك — تطبيق إدارة المساحات",
+      "shortDescription": "مقر ديسك",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.workspacepro.offlineapp",
-      "longDescription": "A fully offline workspace and reservation utility with high-end device lock security activation algorithms.",
-      "macOS": {
-        "entitlements": null,
-        "exceptionDomain": "",
-        "frameworks": [],
-        "providerBundleIdentifier": null,
-        "signingIdentity": null,
-        "usePlayground": false
-      },
-      "resources": [],
-      "shortDescription": "Offline high-security booking tool",
-      "targets": "all",
       "windows": {
         "certificateThumbprint": null,
-        "digestAlgorithm": null,
-        "timestampUrl": null,
-        "useMsi": false
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
       }
     },
     "security": {
       "csp": null
     },
+    "updater": {
+      "active": false
+    },
     "windows": [
       {
         "fullscreen": false,
-        "height": 720,
         "resizable": true,
-        "title": "مقر ديسك - إدارة وحجز المساحات والمرافق الأمنية المستقلة",
-        "width": 1280
+        "title": "مقر ديسك",
+        "width": 1280,
+        "height": 800,
+        "minWidth": 900,
+        "minHeight": 600,
+        "center": true
       }
     ]
   }

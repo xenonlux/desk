@@ -1,20 +1,29 @@
 [package]
-name = "workspace-pro"
-version = "1.0.0"
-description = "A Fully Arabic Workspace and Asset Booking Manager with High-End Offline Security Activation Code"
-authors = ["Workspace Enterprise"]
+name = "deskbook"
+version = "0.1.0"
+description = "مقر ديسك - تطبيق إدارة المساحات"
+authors = ["you"]
+license = ""
+repository = ""
+default-run = "deskbook"
 edition = "2021"
+rust-version = "1.60"
 
 [build-dependencies]
-tauri-build = { version = "1.5" }
+tauri-build = { version = "1.5", features = [] }
 
 [dependencies]
-tauri = { version = "1.5", features = ["shell-open"] }
-serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+tauri = { version = "1.6", features = ["shell-open"] }
 
 [profile.release]
-panic = "abort"
-codegen-units = 1
-lto = true
-opt-level = "s"
+panic = "abort"   # حجم أصغر
+codegen-units = 1 # أداء أفضل
+lto = true        # تحسين وقت الربط
+opt-level = "s"   # تحسين الحجم
+strip = true      # حذف الرموز
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
