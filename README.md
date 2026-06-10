@@ -18,12 +18,4 @@ View your app in AI Studio: https://ai.studio/apps/95b0022e-df81-40ea-8f80-0c120
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
-# deskbook
-# deskboo
-# deskboo
-# deskboo
-# deskboo
-# deskbo
-# deskbo
-# deskbo
-# deskbo
+# desk
